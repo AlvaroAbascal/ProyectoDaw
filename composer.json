@@ -1,0 +1,37 @@
+{
+    "name": "alvaro/proyecto",
+    "description": "Just in Time",
+    "type": "project",
+    "require": {
+        "philo/laravel-blade": "3.*",
+        "bacon/bacon-qr-code": "^2.0.5",
+        "endroid/qr-code": "*",
+        "symfony/asset": "^6.4"
+    },
+    "require-dev": {
+        "endroid/quality": "dev-main",
+        "khanamiryan/qrcode-detector-decoder": "^1.0.4||^2.0.2",
+        "setasign/fpdf": "^1.8.2"
+    },
+    "config": {
+        "platform": {
+            "php": "8.1"
+        },
+        "optimize-autoloader": true,
+        "allow-plugins": {
+            "kylekatarnls/update-helper": true
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Clases\\": "src"
+        }
+    },
+    "license": "GNU/GPL",
+    "authors": [
+        {
+            "name": "alvaro",
+            "email": "alvaro@correo.es"
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+DELIMITER //
+CREATE PROCEDURE InsertarMovimientosPrueba()
+BEGIN
+    -- Generar 100 días de este año (2024)
+    SET @fecha_inicio = '2024-01-01';
+    SET @fecha_fin = '2024-04-09'; -- Seleccioné esta fecha para no exceder el límite de 100 días, ya que es el 99º día del año.
+
+    WHILE (@fecha_inicio <= @fecha_fin) DO
+        -- Insertar registros para el usuario 'alvaro@alvaro.com'
+        INSERT INTO movimientos (idUsuario, inicio, fin) VALUES (1, CONCAT(@fecha_inicio, ' ', SEC_TO_TIME(RAND()*(10*3600-6*3600)+6*3600)), CONCAT(@fecha_inicio, ' ', SEC_TO_TIME(RAND()*(16*3600-11*3600)+11*3600)));
+
+        -- Insertar registros para el usuario 'alex@alex.com'
+        INSERT INTO movimientos (idUsuario, inicio, fin) VALUES (2, CONCAT(@fecha_inicio, ' ', SEC_TO_TIME(RAND()*(10*3600-6*3600)+6*3600)), CONCAT(@fecha_inicio, ' ', SEC_TO_TIME(RAND()*(16*3600-11*3600)+11*3600)));
+
+        -- Insertar registros para el usuario 'alba@alba.com'
+        INSERT INTO movimientos (idUsuario, inicio, fin) VALUES (3, CONCAT(@fecha_inicio, ' ', SEC_TO_TIME(RAND()*(10*3600-6*3600)+6*3600)), CONCAT(@fecha_inicio, ' ', SEC_TO_TIME(RAND()*(16*3600-11*3600)+11*3600)));
+
+        -- Aumentar la fecha en un día
+        SET @fecha_inicio = DATE_ADD(@fecha_inicio, INTERVAL 1 DAY);
+    END WHILE;
+END//
+DELIMITER ;
+
+
+
+
+CALL InsertarMovimientosPrueba();
