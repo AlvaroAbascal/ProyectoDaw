@@ -23,9 +23,7 @@ El proyecto DAW de soluciones tecnológicas para el control horario en empresas 
 Gracias por su atención. Este proyecto refleja mi capacidad para desarrollar soluciones tecnológicas innovadoras y eficientes, y espero que sea una valiosa adición a mi portafolio profesional.
 
 
-# Proyecto de Despliegue
-
-## Despliegue
+# Despliegue
 
 Para asegurar que nuestra aplicación funcione correctamente en un entorno local antes de su despliegue en un servidor de producción, hemos utilizado Laragon. A continuación, se detallan los pasos seguidos:
 
