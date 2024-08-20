@@ -24,27 +24,22 @@ Gracias por su atención. Este proyecto refleja mi capacidad para desarrollar so
 
 
 # Despliegue
-
 Para asegurar que nuestra aplicación funcione correctamente en un entorno local antes de su despliegue en un servidor de producción, hemos utilizado Laragon. A continuación, se detallan los pasos seguidos:
 
 ### Instalación de Laragon
-
 1. Descarga e instala Laragon desde [su página oficial](https://laragon.org/download/).
 2. Sigue las instrucciones de instalación y asegúrate de que todos los componentes necesarios (Apache, MySQL, PHP, etc.) estén instalados.
 
 ### Creación del Proyecto
-
 1. Crea un nuevo proyecto en Laragon.
 2. Copia el código fuente en el directorio `www` de Laragon. Por defecto, este directorio se encuentra en `C:\laragon\www`.
 
 ### Configuración de la Base de Datos
-
 1. Accede a phpMyAdmin a través de `http://localhost/phpmyadmin`.
 2. Crea una nueva base de datos para el proyecto.
 3. Importa los datos necesarios en la nueva base de datos utilizando la opción de importación de phpMyAdmin.
 
 ### Verificación del Despliegue
-
 1. Accede a la aplicación a través de `http://localhost/`.
 2. Realiza pruebas básicas para verificar su correcto funcionamiento.
 
